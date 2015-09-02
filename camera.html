@@ -25,7 +25,7 @@ Camera and video
 				}, errBack);
 			} else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
 				navigator.webkitGetUserMedia(videoObj, function(stream){
-					video.src = window.URL.createObjectURL(stream);
+					video.src = window.webkitURL.createObjectURL(stream);
 					video.play();
 				}, errBack);
 			} else if(navigator.mozGetUserMedia) { // WebKit-prefixed
